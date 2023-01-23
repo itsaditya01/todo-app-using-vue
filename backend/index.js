@@ -8,6 +8,7 @@ app.use(cors());
 
 //routes
 app.use("/api", require("./routes/route"));
+app.use("/auth", require("./routes/auth"));
 
 app.listen(3000, () => {
   console.log("Example app listening on port 3000!");
